@@ -1,0 +1,49 @@
+/* navbar */
+/* nav{
+    background-color: #3B7197;
+} */
+/* .bg{
+    background-image: url("assets/img/background-01.svg");
+} */
+/* button{
+    background-color: #4A8DB7;
+} */
+/* Profil */
+
+/* Footer */
+/* footer{
+    background-color: #4A8DB7;
+}
+.blue{
+    color: #4A8DB7;
+} */
+
+/* @media only screen and (max-width: 420px) {
+    .bg-pelayanan {
+        width: 420px;
+    } */
+/* } */
+/* *{
+    font-family: montserrat;
+} */
+.owl-informasi  .owl-dots .owl-dot {
+    visibility: collapse;
+    display: none;
+    margin:0;
+    padding: 0;
+}
+.owl-informasi .owl-stage-outer .owl-stage {
+    margin-left: 0;
+    margin-right: 0;
+}
+.owl-nav {
+    visibility: collapse;
+}
+.bg-blue {
+    background-color: #a1dbea;
+    color: #a1dbea;
+}
+.bg-gray {
+    background-color: #f2f2f2;
+    color: #f2f2f2;
+}
