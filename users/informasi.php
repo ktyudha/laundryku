@@ -18,7 +18,7 @@
         ?>
           
             <div class="item my-0">
-                  <img src="assets/<?php echo $data['image_url']; ?>" class="mx-0 my-0 img-fluid" alt="...">
+                  <img src="../assets/<?php echo $data['image_url']; ?>" class="mx-0 my-0 img-fluid" alt="...">
             </div>
         <?php
         }

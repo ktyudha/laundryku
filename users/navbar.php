@@ -21,12 +21,12 @@
           <a class="nav-link fw-semibold" href="#profil">Profil</a>
         </li>
         <li class="nav-item my-auto">
-          <a href="users-signup/" class="nav-link">
+          <a href="client-signup/" class="nav-link">
             <input type="button" class="btn btn-primary" value="Daftar">
           </a>
         </li>
         <li class="nav-item">
-          <a href="users-signin/" class="nav-link">
+          <a href="client-signin/" class="nav-link">
             <input type="button" class="btn btn-outline-primary" value="Masuk">
           </a>
         </li>

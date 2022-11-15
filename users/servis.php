@@ -22,7 +22,7 @@
             <div class="item">
               <div class="card border-0 mx-1 my-3" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
                 <div class="mt-3 mx-3">
-                  <img src="assets/<?php echo $data['image_url']; ?>" class="card-img-top rounded" alt="...">
+                  <img src="../assets/<?php echo $data['image_url']; ?>" class="card-img-top rounded" alt="...">
                 </div>
                 <div class="card-body text-center">
                   <h5 class="card-title fw-bold"><?php echo $data['tagline']; ?></h5>
@@ -53,7 +53,7 @@
                   <div class="row">
                     <!-- IMAGE -->
                     <div class="col-md-5">
-                      <img src="assets/<?php echo $data['image_url']; ?>" class="img-fluid rounded mt-2" alt="...">
+                      <img src="../assets/<?php echo $data['image_url']; ?>" class="img-fluid rounded mt-2" alt="...">
                       <span class="badge bg-light text-dark mt-3">
                         <div class="row">
                         </div>

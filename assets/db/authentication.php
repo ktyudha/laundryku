@@ -32,8 +32,61 @@ if (isset($_POST['adduser'])) {
                 }
             }
         }
+    } 
+}
+
+if (isset($_POST['signUp'])) {
+    $email = $_POST['email'];
+    $nama = $_POST['namalengkap'];
+    $username = $_POST['username'];
+    $password = $_POST['pswd'];
+
+    $passwordmd5 = md5($password);
+
+    $check_username = mysqli_query($conn, "SELECT * FROM users_client WHERE username ='$username'");
+    $check_newuser = mysqli_num_rows($check_username);
+
+    if ($check_newuser != 0) {
+        echo "<script>alert('Username is Already');document.location='../../users-signup';</script>";
+    } else {
+
+        $sql = "INSERT INTO users_client (email, nama, username, pswd) VALUES ('$email', '$nama', '$username', '$passwordmd5')";
+        $query = mysqli_query($conn, $sql);
+
+        if ($query != 0) {
+            echo "<script>alert('Has been save');document.location='../../users/';</script>";
+        } else {
+            echo "<script>alert('Can't Save');document.location='../../users/';</script>";
+        }
     }
-    
+
+}
+// siginin
+if (isset($_POST['signinusers'])) {
+    $username = $_POST['username'];
+    $password = $_POST['pswd'];
+
+    $cekpswd = md5($password);
+
+    $sql = "SELECT * FROM users_client WHERE username = '$username' and pswd = '$cekpswd'";
+
+    $query = mysqli_query($conn, $sql);
+    $cek = mysqli_num_rows($query);
+
+    if ($cek > 0) {
+        header("location: ../../users");
+
+        $user = mysqli_fetch_array($query);
+
+        $_SESSION["username"] = $user['username'];
+        $_SESSION["nama"] = $user['nama'];
+        $_SESSION["pswd"] = $user['pswd'];
+        $_SESSION["email"] = $user['email'];
+    } else {
+        // echo "<script>alert('Data Anda tidak valid!');location.href='../../users-signin/';</script>";
+        echo $cekpswd;
+
+    }
 }
 
 // siginin

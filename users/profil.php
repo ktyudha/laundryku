@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-4 my-5">
-          <img src="assets/uploads/profil/smartlaundry1.png" class="img-thumbnail rounded my-4 bg-blue border-0">
+          <img src="../assets/uploads/profil/smartlaundry1.png" class="img-thumbnail rounded my-4 bg-blue border-0">
         </div>
         <div class="col-md-4 my-auto">
           <div class="text-center my-auto pb-3">

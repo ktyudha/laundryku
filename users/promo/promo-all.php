@@ -34,7 +34,7 @@ while ($data = mysqli_fetch_array($query)) {
             <button type="button" class="border-0 bg-white text-dark" data-bs-target="#myModal-<?php echo $promoIndex; ?>" data-bs-toggle="modal">
               <div class="card border-0 my-3" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
                 <div class="mt-3 mx-3">
-                  <img src="../assets/<?php echo $data['image_url']; ?>" class="card-img-top rounded" alt="...">
+                  <img src="../../assets/<?php echo $data['image_url']; ?>" class="card-img-top rounded" alt="...">
                 </div>
                 <div class="card-body text-start">
                   <h5 class="card-title fw-bold"><?php echo $data['tagline']; ?></h5>
@@ -62,7 +62,7 @@ while ($data = mysqli_fetch_array($query)) {
                             <div class="row">
                                 <!-- IMAGE -->
                                 <div class="col-md-5">
-                                    <img src="../assets/<?php echo $data['image_url']; ?>" class="img-fluid rounded mt-2" alt="...">
+                                    <img src="../../assets/<?php echo $data['image_url']; ?>" class="img-fluid rounded mt-2" alt="...">
                                     <span class="badge bg-light text-dark mt-3">
                                         <div class="row">
                                             <div class="col-auto my-auto">
